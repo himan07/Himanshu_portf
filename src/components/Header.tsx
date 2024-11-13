@@ -40,7 +40,7 @@ export default function Header() {
               <Linkedin size={20} />
             </a>
             <a
-              href="himan9714@gmail.com"
+               href="mailto:himan9714@gmail.com"
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
               <Mail size={20} />
