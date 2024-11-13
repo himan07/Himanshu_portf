@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import GetDetails from './GetDetails';
 
 export default function Contact() {
   return (
@@ -53,7 +54,7 @@ export default function Contact() {
               </div>
             </div>
             <form className="space-y-6">
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium mb-2">Name</label>
                 <input
                   type="text"
@@ -77,7 +78,8 @@ export default function Contact() {
               <button className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] text-white font-medium hover:shadow-lg hover:shadow-blue-500/20 transition-shadow flex items-center justify-center space-x-2">
                 <span>Send Message</span>
                 <Send size={20} />
-              </button>
+              </button> */}
+              <GetDetails />
             </form>
           </div>
         </div>

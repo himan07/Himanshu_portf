@@ -18,7 +18,7 @@ function App() {
       <footer className="py-8">
         <div className="container mx-auto px-6 text-center text-slate-600 dark:text-slate-400">
           <p className="glass-effect inline-block px-6 py-3 rounded-full">
-            © {new Date().getFullYear()} Portfolio.dev. All rights reserved.
+            © {new Date().getFullYear()} Himanshu Yadav. All rights reserved.
           </p>
         </div>
       </footer>
