@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-gradient: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800;
+    background-attachment: fixed;
+  }
+
+  .dark {
+    --glass-bg: rgba(0, 0, 0, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-lg border border-opacity-20;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-blue-500;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl;
+  }
+
+  .glass-card {
+    @apply glass-effect rounded-2xl shadow-lg;
+  }
+
+  .section-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+}
